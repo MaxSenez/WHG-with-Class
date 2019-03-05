@@ -176,9 +176,6 @@ namespace WHGwoClass
             // colliding with end(index 2) and not colliding with exit(index 3)
             if (hero.Collision(gameAreas[2]) && !hero.Collision(gameAreas[3]))
             {
-                //draw, pause, reset to start position
-                Refresh();
-                Thread.Sleep(1000);
                 hero.x = startX;
                 hero.y = startY;
             }
